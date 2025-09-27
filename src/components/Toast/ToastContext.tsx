@@ -40,7 +40,6 @@ export const ToastProvider: React.FC<ToastProviderProps> = ({ children }) => {
     };
 
     setToasts((prevToasts) => {
-      // Додаємо новий toast в кінець списку
       return [...prevToasts, newToast];
     });
 
