@@ -1,5 +1,5 @@
 'use client';
-
+import { Input } from '@/components/Input/Input';
 import {
   ToastProvider,
   useToastActions,
@@ -16,6 +16,15 @@ function LibraryDemo() {
         </h1>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="bg-white rounded-xl shadow-lg p-6">
+            <h2 className="text-2xl font-semibold text-gray-800 mb-4">
+              Input Component
+            </h2>
+            <div className="space-y-4">
+              <Input placeholder="Enter text" clearable />
+              <Input type="password" placeholder="Enter password" clearable />
+            </div>
+          </div>
           <div className="bg-white rounded-xl shadow-lg p-6">
             <h2 className="text-2xl font-semibold text-gray-800 mb-4">
               Toast Component
