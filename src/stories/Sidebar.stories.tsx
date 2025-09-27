@@ -3,7 +3,7 @@ import {
   SidebarProvider,
   useSidebar,
 } from '@/components/Sidebar/Sidebar.context';
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from '@storybook/nextjs-vite';
 import { menuItems } from '@/data/menuItems';
 
 const meta: Meta<typeof Sidebar> = {
