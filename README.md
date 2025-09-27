@@ -1,13 +1,14 @@
 
 # React component library tech task for DevelopsToday
 
-[View live demo](developstoday-component-library.vercel.app)
+[View live demo](https://developstoday-component-library-5gdlc47xs.vercel.app)
 
 This repository contains a small React component library created as a technical assessment for DevelopsToday. The goal of this task is to build reusable UI components with proper state management and props, and showcase them in Storybook with visual variations. Screenshots of each component’s states are included down below.
 
 ### Main page:
 
-<img width="960" height="491" alt="Знімок екрана 2025-09-27 о 13 22 11" src="https://github.com/user-attachments/assets/faa0e5ad-007c-4030-8c1c-493345faef0e" />
+<img width="1512" height="982" alt="Знімок екрана 2025-09-27 о 14 12 20" src="https://github.com/user-attachments/assets/d2566e9f-d0c6-4a9b-970d-4a905ece749e" />
+
 
 ### 1. Input
 
@@ -31,4 +32,8 @@ This repository contains a small React component library created as a technical 
 
 <img width="386" height="783" alt="Знімок екрана 2025-09-27 о 13 22 32" src="https://github.com/user-attachments/assets/53fd8176-e9a6-49b8-9aa0-e73b79d51739" />
 <img width="386" height="783" alt="Знімок екрана 2025-09-27 о 13 22 41" src="https://github.com/user-attachments/assets/8aa5e22f-d9f7-4026-8506-b3bfd283a99c" />
+
+### Theme adaptivity
+
+<img width="1512" height="982" alt="Знімок екрана 2025-09-27 о 14 11 20" src="https://github.com/user-attachments/assets/8dde524b-a8e7-465e-b916-7e74d36221b4" />
 
