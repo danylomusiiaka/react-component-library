@@ -1,7 +1,7 @@
 
 # React component library tech task for DevelopsToday
 
-[View live demo](https://developstoday-component-library-5gdlc47xs.vercel.app)
+[View live demo](https://react-component-library-rust.vercel.app)
 
 This repository contains a small React component library created as a technical assessment for DevelopsToday. The goal of this task is to build reusable UI components with proper state management and props, and showcase them in Storybook with visual variations. Screenshots of each component’s states are included down below.
 
