@@ -89,10 +89,11 @@ export const Toast: React.FC<ToastProps> = ({
   return (
     <div
       className={`
-        fixed z-50 max-w-sm w-full mx-4
-        bottom-4 right-4
+        fixed z-50 w-full
+        bottom-0 right-0 left-0 p-2
+        sm:bottom-4 sm:right-4 sm:left-auto sm:max-w-sm
         ${getAnimationClasses()}
-      `}
+        `}
       role="alert"
     >
       <div
