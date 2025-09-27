@@ -26,17 +26,17 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
           type={inputType}
           value={value}
           onChange={handleChange}
-          className="w-full border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          className="w-full border border-gray-300 rounded px-3 py-2 pr-10 focus:outline-none focus:ring-2 focus:ring-blue-500 placeholder-gray-400"
           {...props}
         />
         {clearable && value && (
           <button
             type="button"
             onClick={handleClear}
-            className={`absolute right-2 text-gray-400 hover:text-gray-600 
+            className={`absolute right-2 text-gray-400 hover:text-[var(--actions-color)]
                      transition-all duration-300 ease-in-out
                      hover:scale-110 active:scale-95
-                     hover:bg-gray-100 rounded-full p-1
+                     rounded-full p-1
                      hover:rotate-90
                      ${value ? 'opacity-100 scale-100' : 'opacity-0 scale-75 pointer-events-none'}`}
           >
@@ -48,10 +48,10 @@ export const Input = forwardRef<HTMLInputElement, InputProps>(
             type="button"
             onClick={() => setShowPassword(!showPassword)}
             className={`absolute right-2 ${clearable && value ? 'mr-6' : ''} 
-                       text-gray-400 hover:text-gray-600
+                       text-gray-400 hover:text-[var(--actions-color)]
                        transition-all duration-300 ease-in-out
                        hover:scale-110 active:scale-95
-                       hover:bg-gray-100 rounded-full p-1
+                       rounded-full p-1
                        animate-in fade-in-0 zoom-in-95`}
           >
             <div

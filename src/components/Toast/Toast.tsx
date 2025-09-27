@@ -99,7 +99,7 @@ export const Toast: React.FC<ToastProps> = ({
       <div
         className={`
           group pointer-events-auto w-full overflow-hidden rounded-md border 
-          bg-background p-6 shadow-lg transition-all
+          bg-[var(--background)] p-6 shadow-lg transition-all
           hover:shadow-xl
           ${colors.border}
         `}

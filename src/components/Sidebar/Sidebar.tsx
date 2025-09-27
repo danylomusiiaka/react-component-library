@@ -65,28 +65,28 @@ export const Sidebar: React.FC<SidebarProps> = ({
       <div key={item.id}>
         <div
           className={`
-            flex items-center justify-between px-4 py-3 cursor-pointer
-            hover:bg-gray-100 transition-colors duration-200
-            ${level > 0 ? 'border-l-2 border-gray-200 ml-4' : ''}
-          `}
+          flex items-center justify-between px-4 py-3 cursor-pointer
+          transition-colors duration-200
+          hover:bg-[var(--card-bg)]
+          ${level > 0 ? 'border-l-2 border-gray-300 ml-4' : ''}
+        `}
           style={{ paddingLeft: `${paddingLeft}px` }}
           onClick={() => {
-            if (hasChildren) {
-              toggleExpanded(item.id);
-            } else if (item.href) {
-              onClose();
-            }
+            if (hasChildren) toggleExpanded(item.id);
+            else if (item.href) onClose();
           }}
         >
           <div className="flex items-center space-x-3">
             {item.icon && (
-              <div className="flex-shrink-0 text-gray-600">{item.icon}</div>
+              <div className="flex-shrink-0 text-[var(--foreground)/60]">
+                {item.icon}
+              </div>
             )}
-            <span className="text-gray-800 font-medium">{item.label}</span>
+            <span className="font-medium">{item.label}</span>
           </div>
 
           {hasChildren && (
-            <div className="flex-shrink-0 text-gray-400">
+            <div className="flex-shrink-0 text-[var(--foreground)/40]">
               {isExpanded ? (
                 <ChevronDown className="w-4 h-4" />
               ) : (
@@ -107,6 +107,7 @@ export const Sidebar: React.FC<SidebarProps> = ({
     );
   };
 
+
   return (
     <>
       {isOpen && (
@@ -118,20 +119,22 @@ export const Sidebar: React.FC<SidebarProps> = ({
 
       <div
         className={`
-          fixed top-0 right-0 h-full w-80 bg-white shadow-xl z-50
-          transform transition-transform duration-300 ease-in-out
-          ${isOpen ? 'translate-x-0' : 'translate-x-full'}
-          ${className}
-        `}
+        fixed top-0 right-0 h-full w-80 shadow-xl z-50
+        transform transition-transform duration-300 ease-in-out
+        ${isOpen ? 'translate-x-0' : 'translate-x-full'}
+        bg-[var(--card-bg)]
+        text-[var(--foreground)]
+        ${className}
+    `}
       >
-        <div className="flex items-center justify-between p-6 border-b border-gray-200">
-          <h2 className="text-xl font-semibold text-gray-800">{title}</h2>
+        <div className="flex items-center justify-between p-6 border-b border-gray-200 transition-colors duration-300">
+          <h2 className="text-xl font-semibold">{title}</h2>
           <button
             onClick={onClose}
             className="
-              p-2 rounded-md text-gray-400 hover:text-gray-600 
-              hover:bg-gray-100 transition-colors duration-200
-            "
+        p-2 rounded-md text-[var(--foreground)/50] hover:text-[var(--foreground)] 
+        hover:bg-[var(--card-bg)] transition-colors duration-200
+      "
           >
             <X className="w-5 h-5" />
           </button>
